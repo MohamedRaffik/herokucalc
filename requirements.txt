@@ -1,4 +1,4 @@
-apsw==3.8.2.post1
+apsw==3.16.2.post1
 asn1crypto==0.24.0
 astroid==1.6.5
 autopep8==1.4
@@ -18,7 +18,7 @@ entrypoints==0.2.3
 enum34==1.1.6
 feedparser==5.2.1
 future==0.16.0
-futures==3.0.2
+futures==3.2.0
 gyp==0.1
 html5-parser==0.4.5
 html5lib==1.0.1
