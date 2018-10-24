@@ -1,16 +1,12 @@
 version: 2
 jobs:
-  build:
-    docker:
-      - image: circleci/python:3.6.2-stretch-browsers
-  deploy:
-    docker:
-      - image: circleci/python:3.6.2-stretch-browsers
-    steps:
-      - checkout
-      - run:
-          name: Deploy Master to Heroku
-          command: |
-	    git push https://heroku:f7ff89f2-b8bc-4e18-849c-cf2cc3acc883@git.heroku.com/calculatoragile.git master
-    
+    build:
+        docker:
+            - image: circleci/python:3.6.2-stretch-browsers
+        steps:
+            - checkout
+            - run: pip install --user -r requirements.txt
+
+
+
 
