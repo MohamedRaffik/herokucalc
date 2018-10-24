@@ -1,1 +1,1 @@
-web: python3 calculator.py
+web: python calculator.py
