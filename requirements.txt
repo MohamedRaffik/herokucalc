@@ -19,7 +19,6 @@ enum34==1.1.6
 feedparser==5.2.1
 future==0.16.0
 futures==3.0.2
-gyp==0.1
 html5-parser==0.4.5
 html5lib==1.0.1
 idna==2.7
