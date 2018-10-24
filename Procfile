@@ -1,1 +1,1 @@
-web: python calculator.py
+web gunicorn manage:app
