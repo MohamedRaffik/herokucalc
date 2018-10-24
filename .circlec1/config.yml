@@ -6,7 +6,3 @@ jobs:
         steps:
             - checkout
             - run: pip install --user -r requirements.txt
-
-
-
-
