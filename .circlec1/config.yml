@@ -1,12 +1,21 @@
+# Python CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-python/ for more details
+#
 version: 2
 jobs:
-    build:
-        docker:
-            - image: circleci/python:3.6.2-stretch-browsers
-        working_directory: ~/csci39549-calculator
-	steps:
-            - checkout
-            - run: 
-	       name: Install requirements
-	       command: |
-                 pip install --user -r requirements.txt
+  build:
+    docker:
+      # specify the version you desire here
+      # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
+      - image: circleci/python:3.6.1-browsers
+
+    working_directory: ~/csci-39549-calculator
+
+    steps:
+      - checkout
+      - run:
+          name: install dependencies
+          command: |
+            . venv/bin/activate
+            pip install --user -r requirements.txt
