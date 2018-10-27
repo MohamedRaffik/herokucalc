@@ -3,7 +3,8 @@ jobs:
     build:
         docker:
             - image: circleci/python:3.6.2-stretch-browsers
-        steps:
+        working_directory: ~/csci39549-calculator
+	steps:
             - checkout
             - run: 
 	       name: Install requirements
